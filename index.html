@@ -1,44 +1,39 @@
-diff --git a/index.html b/index.html
-index 4050d61095cbe9af21814b727ededa7d1b4d63cc..59fc276b87dd2040ac3ea3c1d277cd24477a3482 100644
---- a/index.html
-+++ b/index.html
-@@ -1,37 +1,37 @@
- <!DOCTYPE html>
- <html>
- <head>
-     <meta charset="UTF-8">
-     <title>Math Adventure</title>
-     <link rel="stylesheet" href="style.css">
-     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
- </head>
- <body>
- 
-     <div id="game">
- 
-         <h1 id="game-title">Math Adventure</h1>
- 
-         <div id="info">
-             <span id="nivel-info"></span>
-             <span id="paso-info"></span>
-         </div>
- 
-         <p id="instruccion">Elige la opción correcta</p>
- 
--        <!-- 👇 AQUÍ va la ecuación del paso -->
--        <div id="pregunta" style="font-size:28px; margin:20px 0;"></div>
-+        <div id="pregunta"></div>
- 
-         <div id="opciones">
-             <div class="opcion" id="opcionA"></div>
-             <div class="opcion" id="opcionB"></div>
-         </div>
- 
-         <div id="mensaje"></div>
-+        <button id="continuar-btn" type="button">Continuar</button>
- 
-     </div>
- 
-     <script src="script.js"></script>
- 
- </body>
- </html>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Math Adventure</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+    <div id="game">
+
+        <h1 id="game-title">Math Adventure</h1>
+
+        <div id="info">
+            <span id="nivel-info"></span>
+            <span id="paso-info"></span>
+        </div>
+
+        <p id="instruccion">Elige la opción correcta</p>
+
+        <!-- 👇 AQUÍ va la ecuación del paso -->
+        <div id="pregunta" style="font-size:28px; margin:20px 0;"></div>
+        <div id="pregunta"></div>
+
+        <div id="opciones">
+            <div class="opcion" id="opcionA"></div>
+            <div class="opcion" id="opcionB"></div>
+        </div>
+
+        <div id="mensaje"></div>
+        <button id="continuar-btn" type="button">Continuar</button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

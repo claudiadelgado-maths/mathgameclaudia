@@ -4,12 +4,14 @@
     "fondo": "https://picsum.photos/1200/800?random=1",
     "pasos": [
       {
+        "pregunta": "\\( -3x > 9 \\)",
         "opciones": [
           { "texto": "\\( x < -3 \\)", "correcta": true },
           { "texto": "\\( x > -3 \\)", "correcta": false }
         ]
       },
       {
+        "pregunta": "\\( 2x + 3 > 7 \\)",
         "opciones": [
           { "texto": "\\( x > 2 \\)", "correcta": true },
           { "texto": "\\( x < 2 \\)", "correcta": false }

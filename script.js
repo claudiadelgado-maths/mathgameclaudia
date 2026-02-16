@@ -12,7 +12,9 @@ fetch("data/niveles.json")
 function cargarNivel() {
     pasoActual = 0;
     const nivel = niveles[nivelActual];
+
     document.body.style.backgroundImage = `url(${nivel.fondo})`;
+
     mostrarPaso();
 }
 
@@ -20,16 +22,28 @@ function mostrarPaso() {
     const nivel = niveles[nivelActual];
     const paso = nivel.pasos[pasoActual];
 
+    // Mostrar nivel y paso
     document.getElementById("nivel-info").innerText = "Nivel: " + nivel.nivel;
     document.getElementById("paso-info").innerText = " | Paso: " + (pasoActual + 1);
 
+    // Mostrar instrucción fija
+    document.getElementById("instruccion").innerText = "Elige la opción correcta";
+
+    // Mostrar pregunta base (ecuación)
+    document.getElementById("pregunta").innerHTML = paso.pregunta;
+
     const opcionA = document.getElementById("opcionA");
     const opcionB = document.getElementById("opcionB");
+
+    // Limpiar estilos anteriores
+    opcionA.classList.remove("correcto", "incorrecto");
+    opcionB.classList.remove("correcto", "incorrecto");
 
     document.getElementById("mensaje").innerText = "";
 
     const opciones = [...paso.opciones];
 
+    // Aleatorizar izquierda/derecha
     if (Math.random() < 0.5) {
         opcionA.dataset.correcta = opciones[0].correcta;
         opcionB.dataset.correcta = opciones[1].correcta;
@@ -44,6 +58,8 @@ function mostrarPaso() {
         opcionB.innerHTML = opciones[0].texto;
     }
 
+    // Re-renderizar LaTeX
+    MathJax.typesetClear();
     MathJax.typeset();
 }
 
@@ -66,10 +82,6 @@ function verificar(id) {
 }
 
 function avanzar() {
-    document.querySelectorAll(".opcion").forEach(o => {
-        o.classList.remove("correcto", "incorrecto");
-    });
-
     pasoActual++;
 
     if (pasoActual >= niveles[nivelActual].pasos.length) {

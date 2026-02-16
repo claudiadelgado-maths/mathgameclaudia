@@ -2,19 +2,65 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Math Game Claudia</title>
+    <title>Math Game Claudia - Prueba LaTeX</title>
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-<body style="text-align:center; font-family:Arial; background-color:#f4f4f4;">
+<body style="text-align:center; font-family:Arial; background-color:#f4f4f4; padding:20px;">
 
-    <h1>Bienvenida al Math Game</h1>
+    <h1>Math Game Claudia</h1>
+    <h2>Pruebas de renderizado LaTeX</h2>
 
+    <hr>
+
+    <h3>Desigualdad básica</h3>
     <p>Resuelve: \( -3x > 9 \)</p>
 
     <button onclick="correcto()">A) \( x < -3 \)</button>
     <button onclick="incorrecto()">B) \( x > -3 \)</button>
 
-    <p id="resultado"></p>
+    <p id="resultado" style="font-weight:bold;"></p>
+
+    <hr>
+
+    <h3>Fracciones</h3>
+    <p>Fracción simple inline: \( \dfrac{3}{5} \)</p>
+
+    <p>Fracción anidada:</p>
+    \[
+    \dfrac{\frac{1}{2}}{\frac{3}{4}}
+    \]
+
+    <hr>
+
+    <h3>Sumatoria</h3>
+    \[
+    \sum_{n=1}^{5} n^2
+    \]
+
+    <hr>
+
+    <h3>Integral</h3>
+    \[
+    \int_0^1 x^2 \, dx
+    \]
+
+    <hr>
+
+    <h3>Matriz</h3>
+    \[
+    \begin{pmatrix}
+    1 & 2 \\
+    3 & 4
+    \end{pmatrix}
+    \]
+
+    <hr>
+
+    <h3>Expresión más compleja</h3>
+    \[
+    \displaystyle 
+    \int_{0}^{\infty} \frac{e^{-x}}{1+x^2} \, dx
+    \]
 
     <script>
         function correcto() {
@@ -28,3 +74,4 @@
 
 </body>
 </html>
+

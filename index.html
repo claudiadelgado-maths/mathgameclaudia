@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Math Game Claudia</title>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body style="text-align:center; font-family:Arial; background-color:#f4f4f4;">
+
+    <h1>Bienvenida al Math Game</h1>
+
+    <p>Resuelve: \( -3x > 9 \)</p>
+
+    <button onclick="correcto()">A) \( x < -3 \)</button>
+    <button onclick="incorrecto()">B) \( x > -3 \)</button>
+
+    <p id="resultado"></p>
+
+    <script>
+        function correcto() {
+            document.getElementById("resultado").innerHTML = "Correcto. Excelente.";
+        }
+
+        function incorrecto() {
+            document.getElementById("resultado").innerHTML = "Incorrecto. Intenta de nuevo.";
+        }
+    </script>
+
+</body>
+</html>

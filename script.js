@@ -15,9 +15,24 @@ const opcionesContenedor = document.getElementById("opciones");
 
 async function cargarNiveles() {
     try {
-        const response = await fetch("data/niveles.json");
-        niveles = await response.json();
+        const rutas = [
+            "data/nivel1.json",
+            "data/nivel2.json"
+        ];
+
+        const respuestas = await Promise.all(
+            rutas.map(ruta => fetch(ruta))
+        );
+
+        const datos = await Promise.all(
+            respuestas.map(res => res.json())
+        );
+
+        // Unimos todos los niveles en un solo arreglo
+        niveles = datos.flat();
+
         cargarNivel();
+
     } catch (error) {
         mensaje.innerText = "Error cargando niveles";
         console.error(error);
@@ -29,6 +44,7 @@ function cargarNivel() {
     juegoBloqueado = false;
 
     const nivel = niveles[nivelActual];
+
     document.body.style.backgroundImage = `url(${nivel.fondo})`;
 
     ocultarPantallaFinal();

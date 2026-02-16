@@ -1,0 +1,50 @@
+[
+  {
+    "nivel": 2,
+    "fondo": "https://picsum.photos/1200/800?random=2",
+    "pasos": [
+      {
+        "pregunta": "\\( 2x + 5 \\ge -23x + 30 \\)",
+        "opciones": [
+          { "texto": "\\( 2x + 5 + 23x - 30 \\ge 0 \\)", "correcta": true },
+          { "texto": "\\( 2x + 5 - 23x - 30 \\ge 0 \\)", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "\\( 2x + 5 + 23x - 30 \\ge 0 \\)",
+        "opciones": [
+          { "texto": "\\( 25x - 25 \\ge 0 \\)", "correcta": true },
+          { "texto": "\\( 25x + 25 \\ge 0 \\)", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "\\( 25x - 25 \\ge 0 \\)",
+        "opciones": [
+          { "texto": "\\( 25x \\ge 25 \\)", "correcta": true },
+          { "texto": "\\( x \\ge 25 \\)", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "\\( 25x \\ge 25 \\)",
+        "opciones": [
+          { "texto": "\\( x \\ge \\frac{25}{25} \\)", "correcta": true },
+          { "texto": "\\( x \\le 25 \\)", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "\\( x \\ge \\frac{25}{25} \\)",
+        "opciones": [
+          { "texto": "\\( x \\ge 1 \\)", "correcta": true },
+          { "texto": "\\( x \\ge 25 \\)", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "\\( x \\ge 1 \\)",
+        "opciones": [
+          { "texto": "\\( x \\in [1, +\\infty) \\)", "correcta": true },
+          { "texto": "\\( x \\in (1, +\\infty) \\)", "correcta": false }
+        ]
+      }
+    ]
+  }
+]

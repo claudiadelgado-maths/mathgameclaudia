@@ -10,17 +10,22 @@
 
     <div id="game">
 
-        <h1 id="game-title">Math Adventure</h1>
+        <!-- Caja superior alineada con las opciones -->
+        <div class="header-box">
 
-        <div id="info">
-            <span id="nivel-info"></span>
-            <span id="paso-info"></span>
+            <h1 id="game-title">Math Adventure</h1>
+
+            <div id="info">
+                <span id="nivel-info"></span>
+                <span id="paso-info"></span>
+            </div>
+
+            <p id="instruccion">Elige la opción correcta</p>
+
+            <!-- Ecuación -->
+            <div id="pregunta"></div>
+
         </div>
-
-        <p id="instruccion">Elige la opción correcta</p>
-
-        <!-- Ecuación del paso -->
-        <div id="pregunta" style="font-size:28px; margin:20px 0;"></div>
 
         <!-- Opciones -->
         <div id="opciones">
@@ -28,11 +33,11 @@
             <div class="opcion" id="opcionB"></div>
         </div>
 
-        <!-- Mensaje de estado -->
+        <!-- Mensaje -->
         <div id="mensaje"></div>
 
-        <!-- Botón continuar (oculto por defecto vía CSS o JS) -->
-        <button id="continuar-btn" type="button" style="display:none;">
+        <!-- Botón continuar -->
+        <button id="continuar-btn" type="button">
             Continuar
         </button>
 
@@ -42,3 +47,4 @@
 
 </body>
 </html>
+

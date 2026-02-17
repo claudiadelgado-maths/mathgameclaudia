@@ -94,3 +94,12 @@ body {
 #continuar-btn:hover {
     background: #27a44f;
 }
+
+#game-title {
+    font-size: 52px;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow:
+        0 0 20px rgba(0, 0, 0, 0.95),
+        0 4px 12px rgba(0, 0, 0, 0.9);
+}

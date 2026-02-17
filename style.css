@@ -7,24 +7,19 @@ body {
     background-repeat: no-repeat;
     transition: background 0.5s ease;
     color: #ffffff;
-    position: relative;
 }
 
-/* Overlay oscuro consistente */
-body::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.55);
-    z-index: -1;
-}
-
+/* Caja oscura SOLO para el contenido principal */
 #game {
     padding: 40px 20px;
     min-height: 100vh;
     box-sizing: border-box;
+    
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(4px);
 }
 
+/* Información superior */
 #info {
     margin: 10px 0;
     font-weight: bold;
@@ -41,40 +36,37 @@ body::before {
     margin: 25px 0;
 }
 
-/* Opciones ahora verticales */
+/* Opciones */
 #opciones {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 35px;
-    margin-top: 50px;
+    justify-content: center;
+    gap: 70px;
+    margin-top: 40px;
 }
 
-/* Tarjetas rectangulares grandes */
+/* Cuadros 10% más pequeños */
 .opcion {
-    width: 90%;
-    max-width: 700px;
-    height: 160px;
-    background: rgba(255, 255, 255, 0.95);
+    width: 250px;     /* antes 280 */
+    height: 250px;    /* antes 280 */
+    background: #ffffff; /* blanco sólido */
     color: #111111;
     text-shadow: none;
     border: 4px solid #333;
-    border-radius: 20px;
+    border-radius: 25px;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px;
-    font-size: 26px;
-    transition: transform 0.2s ease, box-shadow 0.3s ease, background 0.3s ease;
+    font-size: 22px;
+    transition: transform 0.2s ease, background 0.3s ease, box-shadow 0.3s ease;
 }
 
 .opcion:hover {
-    transform: scale(1.02);
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35);
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
 }
 
-/* Estados */
 .correcto {
     background-color: #b4f5b4;
     border-color: #2e8b57;
@@ -92,8 +84,8 @@ body::before {
 }
 
 #continuar-btn {
-    margin-top: 25px;
-    padding: 14px 32px;
+    margin-top: 20px;
+    padding: 12px 28px;
     border-radius: 12px;
     border: 2px solid #ffffff;
     background: #1f8f44;
@@ -103,10 +95,8 @@ body::before {
     cursor: pointer;
     display: none;
     text-shadow: none;
-    transition: background 0.3s ease;
 }
 
 #continuar-btn:hover {
     background: #27a44f;
 }
-

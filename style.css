@@ -84,9 +84,10 @@ body {
   font-size: 22px;
   transition: transform 0.2s ease, background 0.3s ease, box-shadow 0.3s ease;
   box-sizing: border-box;
+  overflow: hidden; /* evita cualquier desbordamiento visual */
 }
 
-/* Hover elegante sin exagerar escala */
+/* Hover elegante */
 .opcion:hover {
   transform: scale(1.02);
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
@@ -104,17 +105,24 @@ body {
   border-color: #b22222;
 }
 
-/* Soporte para ecuaciones largas (MathJax) */
+/* ===== CORRECCIÓN DEFINITIVA MATHJAX ===== */
 
-.opcion mjx-container {
-  max-width: 100% !important;
+/* Elimina completamente scroll interno */
+mjx-container {
   overflow: visible !important;
+  max-width: 100% !important;
 }
 
-.opcion mjx-container[jax="CHTML"] {
+/* Evita modo scroll del render CHTML */
+mjx-container[jax="CHTML"] {
+  overflow: visible !important;
   white-space: normal !important;
 }
 
+/* Asegura que el contenido interno no fuerce ancho extra */
+mjx-container mjx-math {
+  max-width: 100% !important;
+}
 
 /* ===== MENSAJE Y BOTÓN ===== */
 

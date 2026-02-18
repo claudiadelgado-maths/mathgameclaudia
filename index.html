@@ -1,51 +1,41 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Math Adventure</title>
-
-    <link rel="stylesheet" href="style.css">
-
-    <!-- MathJax -->
-    <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <meta charset="UTF-8">
+  <title>Math Adventure</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
+
 <body>
+  <div id="game">
+    <h1 id="game-title">Math Adventure</h1>
 
-    <div id="game">
-
-        <!-- Rectángulo superior -->
-        <div class="header-box">
-            <h1 id="game-title">Math Adventure</h1>
-
-            <div id="info">
-                <span id="nivel-info"></span>
-                <span id="paso-info"></span>
-            </div>
-
-            <p id="instruccion">Elige la opción correcta</p>
-
-            <div id="pregunta"></div>
-        </div>
-
-        <!-- Opciones -->
-        <div id="opciones">
-            <div class="opcion" id="opcionA"></div>
-            <div class="opcion" id="opcionB"></div>
-        </div>
-
-        <!-- Mensaje -->
-        <div id="mensaje"></div>
-
-        <!-- Botón -->
-        <button id="continuar-btn" type="button" style="display:none;">
-            Continuar
-        </button>
-
+    <div id="info">
+      <span id="nivel-info"></span>
+      <span id="paso-info"></span>
     </div>
 
-    <!-- Script principal -->
-    <script src="script.js"></script>
+    <p id="instruccion">Elige la opción correcta</p>
 
+    <!-- Ecuación del paso -->
+    <div id="pregunta" style="font-size:28px; margin:20px 0;"></div>
+
+    <!-- Opciones -->
+    <div id="opciones">
+      <div class="opcion" id="opcionA"></div>
+      <div class="opcion" id="opcionB"></div>
+    </div>
+
+    <!-- Mensaje de estado -->
+    <div id="mensaje"></div>
+
+    <!-- Botón continuar (oculto por defecto vía CSS o JS) -->
+    <button id="continuar-btn" type="button" style="display:none;">
+      Continuar
+    </button>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

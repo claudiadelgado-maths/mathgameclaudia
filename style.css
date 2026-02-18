@@ -5,29 +5,30 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: #ffffff;
 }
 
+/* CONTENEDOR PRINCIPAL */
 #game {
     padding: 40px 20px;
     min-height: 100vh;
     box-sizing: border-box;
 }
 
-/* CONTENEDOR DE OPCIONES */
+/* ===== OPCIONES ===== */
+
 #opciones {
     display: flex;
     justify-content: center;
     gap: 80px;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
-/* CUADROS (10% más pequeños) */
+/* Cuadros 10% más pequeños */
 .opcion {
     width: 252px;
     height: 252px;
     background: #ffffff;
-    color: #111;
+    color: #111111;
     border: 4px solid #333;
     border-radius: 25px;
     display: flex;
@@ -37,18 +38,25 @@ body {
     cursor: pointer;
 }
 
-/* CAJA SUPERIOR
-   TOMA EXACTAMENTE EL MISMO ANCHO QUE LAS OPCIONES */
+/* ===== RECTÁNGULO SUPERIOR ===== */
+/* 252 + 80 + 252 = 584px */
+
 .header-box {
-    display: block;
-    width: fit-content; /* se ajusta automáticamente */
-    margin: 40px auto 30px auto;
-    padding: 30px 40px;
-    background: rgba(0, 0, 0, 0.5);
+    width: 584px;
+    margin: 40px auto 0 auto;
+    padding: 30px 20px;
+    background: #ffffff;
+    color: #111111;
+    border: 4px solid #333;
     border-radius: 25px;
+    box-sizing: border-box;
 }
 
-/* Texto */
+/* Texto interno */
+#game-title {
+    margin-top: 0;
+}
+
 #info {
     margin: 10px 0;
     font-weight: bold;
@@ -62,3 +70,4 @@ body {
     font-size: 28px;
     margin: 20px 0;
 }
+

@@ -107,9 +107,14 @@ body {
 /* Soporte para ecuaciones largas (MathJax) */
 
 .opcion mjx-container {
-  max-width: 100%;
-  overflow-x: auto;
+  max-width: 100% !important;
+  overflow: visible !important;
 }
+
+.opcion mjx-container[jax="CHTML"] {
+  white-space: normal !important;
+}
+
 
 /* ===== MENSAJE Y BOTÓN ===== */
 

@@ -14,6 +14,28 @@ body {
   padding: 40px 20px;
   min-height: 100vh;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ===== RECUADRO SUPERIOR ===== */
+
+.header-box {
+  width: 100%;
+  max-width: 700px;
+  padding: 30px 25px;
+  margin-bottom: 40px;
+  background: #ffffff;
+  color: #111111;
+  border: 4px solid #333;
+  border-radius: 25px;
+  box-sizing: border-box;
+  text-shadow: none;
+}
+
+#game-title {
+  margin-top: 0;
 }
 
 #info {
@@ -32,11 +54,14 @@ body {
   margin: 25px 0;
 }
 
+/* ===== OPCIONES ===== */
+
 #opciones {
   display: flex;
   justify-content: center;
   gap: 80px;
-  margin-top: 40px;
+  margin-top: 20px;
+  flex-wrap: wrap;
 }
 
 .opcion {
@@ -58,7 +83,7 @@ body {
 
 .opcion:hover {
   transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
 }
 
 .correcto {
@@ -70,6 +95,8 @@ body {
   background-color: #f5b4b4;
   border-color: #b22222;
 }
+
+/* ===== MENSAJE Y BOTÓN ===== */
 
 #mensaje {
   margin-top: 40px;
@@ -89,6 +116,7 @@ body {
   cursor: pointer;
   display: none;
   text-shadow: none;
+  transition: background 0.3s;
 }
 
 #continuar-btn:hover {

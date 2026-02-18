@@ -1,125 +1,96 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: none;
-    color: #ffffff;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.85);
+  margin: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background 0.5s ease;
+  color: #ffffff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.85);
 }
 
 #game {
-    padding: 40px 20px;
-    min-height: 100vh;
-    box-sizing: border-box;
-}
-
-/* ===== RECTÁNGULO SUPERIOR ===== */
-/* 280 + 80 + 280 = 640px */
-
-.header-box {
-    width: 640px;
-    margin: 40px auto 30px auto;
-    padding: 30px 20px;
-    background: #ffffff;
-    color: #111111;
-    border: 4px solid #333;
-    border-radius: 25px;
-    box-sizing: border-box;
-    text-shadow: none; /* importante para que no herede sombra blanca */
-}
-
-#game-title {
-    margin-top: 0;
+  padding: 40px 20px;
+  min-height: 100vh;
+  box-sizing: border-box;
 }
 
 #info {
-    margin: 10px 0;
-    font-weight: bold;
-    font-size: 18px;
+  margin: 10px 0;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 #instruccion {
-    font-size: 20px;
-    margin-top: 20px;
+  font-size: 20px;
+  margin-top: 20px;
 }
 
 #pregunta {
-    font-size: 32px;
-    margin: 25px 0;
+  font-size: 32px;
+  margin: 25px 0;
 }
 
-/* ===== OPCIONES ===== */
-
 #opciones {
-    display: flex;
-    justify-content: center;
-    gap: 80px;
-    margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 40px;
 }
 
 .opcion {
-    width: 280px;
-    height: 280px;
-    background: #ffffff;
-    color: #111111;
-    text-shadow: none;
-    border: 4px solid #333;
-    border-radius: 25px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    font-size: 22px;
-    transition: transform 0.2s, background 0.3s, box-shadow 0.3s;
+  width: 280px;
+  height: 280px;
+  background: #ffffff;
+  color: #111111;
+  text-shadow: none;
+  border: 4px solid #333;
+  border-radius: 25px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-size: 22px;
+  transition: transform 0.2s, background 0.3s, box-shadow 0.3s;
 }
 
 .opcion:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .correcto {
-    background-color: #b4f5b4;
-    border-color: #2e8b57;
+  background-color: #b4f5b4;
+  border-color: #2e8b57;
 }
 
 .incorrecto {
-    background-color: #f5b4b4;
-    border-color: #b22222;
+  background-color: #f5b4b4;
+  border-color: #b22222;
 }
 
-/* ===== MENSAJE Y BOTÓN ===== */
-
 #mensaje {
-    margin-top: 40px;
-    font-size: 22px;
-    font-weight: bold;
+  margin-top: 40px;
+  font-size: 22px;
+  font-weight: bold;
 }
 
 #continuar-btn {
-    margin-top: 20px;
-    padding: 12px 28px;
-    border-radius: 12px;
-    border: 2px solid #ffffff;
-    background: #1f8f44;
-    color: #ffffff;
-    font-size: 24px;
-    font-weight: bold;
-    cursor: pointer;
-    display: none;
-    text-shadow: none;
+  margin-top: 20px;
+  padding: 12px 28px;
+  border-radius: 12px;
+  border: 2px solid #ffffff;
+  background: #1f8f44;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  display: none;
+  text-shadow: none;
 }
 
 #continuar-btn:hover {
-    background: #27a44f;
+  background: #27a44f;
 }
-
-#pregunta {
-    font-size: 28px;
-    margin: 20px 0;
-}
-

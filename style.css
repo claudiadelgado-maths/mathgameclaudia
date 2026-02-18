@@ -56,7 +56,7 @@ body {
   margin: 25px 0;
 }
 
-/* ===== OPCIONES (VERTICAL) ===== */
+/* ===== OPCIONES RECTANGULARES ===== */
 
 #opciones {
   display: flex;
@@ -64,33 +64,32 @@ body {
   align-items: center;
   gap: 30px;
   width: 100%;
-  max-width: 700px;
+  max-width: 700px; /* mismo ancho que el título */
   margin-top: 20px;
 }
 
 .opcion {
-  width: 100%;
-  min-height: 110px;
+  width: 100%;              /* ocupa todo el ancho disponible */
+  height: 120px;            /* rectangular */
   background: #ffffff;
   color: #111111;
   text-shadow: none;
   border: 4px solid #333;
-  border-radius: 20px;
+  border-radius: 25px;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 25px;
+  padding: 20px;
   font-size: 22px;
   transition: transform 0.2s ease, background 0.3s ease, box-shadow 0.3s ease;
   box-sizing: border-box;
-  overflow: hidden; /* evita cualquier desbordamiento visual */
 }
 
-/* Hover elegante */
+/* Hover original */
 .opcion:hover {
-  transform: scale(1.02);
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* Estados dinámicos */
@@ -103,25 +102,6 @@ body {
 .incorrecto {
   background-color: #f5b4b4;
   border-color: #b22222;
-}
-
-/* ===== CORRECCIÓN DEFINITIVA MATHJAX ===== */
-
-/* Elimina completamente scroll interno */
-mjx-container {
-  overflow: visible !important;
-  max-width: 100% !important;
-}
-
-/* Evita modo scroll del render CHTML */
-mjx-container[jax="CHTML"] {
-  overflow: visible !important;
-  white-space: normal !important;
-}
-
-/* Asegura que el contenido interno no fuerce ancho extra */
-mjx-container mjx-math {
-  max-width: 100% !important;
 }
 
 /* ===== MENSAJE Y BOTÓN ===== */

@@ -1,41 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Math Adventure</title>
+
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <!-- MathJax -->
+    <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
 
-<div id="game">
+    <div id="game">
 
-    <div class="header-box">
-        <h1 id="game-title">Math Adventure</h1>
+        <!-- Rectángulo superior -->
+        <div class="header-box">
+            <h1 id="game-title">Math Adventure</h1>
 
-        <div id="info">
-            <span id="nivel-info"></span>
-            <span id="paso-info"></span>
+            <div id="info">
+                <span id="nivel-info"></span>
+                <span id="paso-info"></span>
+            </div>
+
+            <p id="instruccion">Elige la opción correcta</p>
+
+            <div id="pregunta"></div>
         </div>
 
-        <p id="instruccion">Elige la opción correcta</p>
-        <div id="pregunta"></div>
+        <!-- Opciones -->
+        <div id="opciones">
+            <div class="opcion" id="opcionA"></div>
+            <div class="opcion" id="opcionB"></div>
+        </div>
+
+        <!-- Mensaje -->
+        <div id="mensaje"></div>
+
+        <!-- Botón -->
+        <button id="continuar-btn" type="button" style="display:none;">
+            Continuar
+        </button>
+
     </div>
 
-    <div id="opciones">
-        <div class="opcion" id="opcionA"></div>
-        <div class="opcion" id="opcionB"></div>
-    </div>
-
-    <div id="mensaje"></div>
-
-    <button id="continuar-btn" type="button">
-        Continuar
-    </button>
-
-</div>
-
-<script src="script.js"></script>
+    <!-- Script principal -->
+    <script src="script.js"></script>
 
 </body>
 </html>

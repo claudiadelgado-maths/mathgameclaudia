@@ -4,45 +4,87 @@
     "fondo": "https://picsum.photos/1200/800?random=2",
     "pasos": [
       {
-        "pregunta": "\\( 2x + 5 \\ge -23x + 30 \\)",
+        "pregunta": "\\( -23x \\le 4 \\)",
         "opciones": [
-          { "texto": "\\( 2x + 5 + 23x - 30 \\ge 0 \\)", "correcta": true },
-          { "texto": "\\( 2x + 5 - 23x - 30 \\ge 0 \\)", "correcta": false }
+          { "texto": "\\( x \\ge -\\dfrac{4}{23} \\)", "correcta": true },
+          { "texto": "\\( x \\le -\\dfrac{4}{23} \\)", "correcta": false }
         ]
       },
       {
-        "pregunta": "\\( 2x + 5 + 23x - 30 \\ge 0 \\)",
+        "pregunta": "\\( \\dfrac{x}{-8} \\le 4 \\)",
         "opciones": [
-          { "texto": "\\( 25x - 25 \\ge 0 \\)", "correcta": true },
-          { "texto": "\\( 25x + 25 \\ge 0 \\)", "correcta": false }
+          { "texto": "\\( x \\ge -(8)(4) \\)", "correcta": true },
+          { "texto": "\\( x \\le -(8)(4) \\)", "correcta": false }
         ]
       },
       {
-        "pregunta": "\\( 25x - 25 \\ge 0 \\)",
+        "pregunta": "\\( 11x > 7 \\)",
         "opciones": [
-          { "texto": "\\( 25x \\ge 25 \\)", "correcta": true },
-          { "texto": "\\( x \\ge 25 \\)", "correcta": false }
+          { "texto": "\\( x > \\dfrac{7}{11} \\)", "correcta": true },
+          { "texto": "\\( x < \\dfrac{7}{11} \\)", "correcta": false }
         ]
       },
       {
-        "pregunta": "\\( 25x \\ge 25 \\)",
+        "pregunta": "\\( \\dfrac{x}{6} \\ge 8 \\)",
         "opciones": [
-          { "texto": "\\( x \\ge \\frac{25}{25} \\)", "correcta": true },
-          { "texto": "\\( x \\le 25 \\)", "correcta": false }
+          { "texto": "\\( x \\ge (6)(8) \\)", "correcta": true },
+          { "texto": "\\( x \\le (6)(8) \\)", "correcta": false }
         ]
       },
       {
-        "pregunta": "\\( x \\ge \\frac{25}{25} \\)",
+        "pregunta": "\\( -29x \\ge 6 \\)",
         "opciones": [
-          { "texto": "\\( x \\ge 1 \\)", "correcta": true },
-          { "texto": "\\( x \\ge 25 \\)", "correcta": false }
+          { "texto": "\\( x \\le -\\dfrac{6}{29} \\)", "correcta": true },
+          { "texto": "\\( x \\ge -\\dfrac{6}{29} \\)", "correcta": false }
         ]
       },
       {
-        "pregunta": "\\( x \\ge 1 \\)",
+        "pregunta": "\\( \\dfrac{x}{4} > 7 \\)",
         "opciones": [
-          { "texto": "\\( x \\in [1, +\\infty) \\)", "correcta": true },
-          { "texto": "\\( x \\in (1, +\\infty) \\)", "correcta": false }
+          { "texto": "\\( x > (4)(7) \\)", "correcta": true },
+          { "texto": "\\( x < (4)(7) \\)", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "\\( 13x \\le 5 \\)",
+        "opciones": [
+          { "texto": "\\( x \\le \\dfrac{5}{13} \\)", "correcta": true },
+          { "texto": "\\( x \\ge \\dfrac{5}{13} \\)", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "\\( \\dfrac{x}{-5} > 6 \\)",
+        "opciones": [
+          { "texto": "\\( x < -(5)(6) \\)", "correcta": true },
+          { "texto": "\\( x > -(5)(6) \\)", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "\\( 17x \\ge 9 \\)",
+        "opciones": [
+          { "texto": "\\( x \\ge \\dfrac{9}{17} \\)", "correcta": true },
+          { "texto": "\\( x \\le \\dfrac{9}{17} \\)", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "\\( \\dfrac{x}{9} \\le 5 \\)",
+        "opciones": [
+          { "texto": "\\( x \\le (9)(5) \\)", "correcta": true },
+          { "texto": "\\( x \\ge (9)(5) \\)", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "\\( -19x > 8 \\)",
+        "opciones": [
+          { "texto": "\\( x < -\\dfrac{8}{19} \\)", "correcta": true },
+          { "texto": "\\( x > -\\dfrac{8}{19} \\)", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "\\( \\dfrac{x}{-7} \\ge 3 \\)",
+        "opciones": [
+          { "texto": "\\( x \\le -(7)(3) \\)", "correcta": true },
+          { "texto": "\\( x \\ge -(7)(3) \\)", "correcta": false }
         ]
       }
     ]

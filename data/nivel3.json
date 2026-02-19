@@ -1,0 +1,127 @@
+[
+  {
+    "nivel": 3,
+    "fondo": "https://picsum.photos/1200/800?random=3",
+    "pasos": [
+      {
+        "pregunta": "\\( x + 8 < 17 \\)",
+        "opciones": [
+          { "texto": "\\( x < 17 - 8 \\)", "correcta": true },
+          { "texto": "\\( x < 17 + 8 \\)", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "\\( x < 17 - 8 \\)",
+        "opciones": [
+          { "texto": "\\( x < 9 \\)", "correcta": true },
+          { "texto": "\\( x > 9 \\)", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "\\( x < 9 \\)",
+        "opciones": [
+          { "texto": "\\( x \\in (-\\infty, 9) \\)", "correcta": true },
+          { "texto": "\\( x \\in (-9, +\\infty) \\)", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "\\( x - 5 \\ge -7 \\)",
+        "opciones": [
+          { "texto": "\\( x - 5 + 7 \\ge 0 \\)", "correcta": true },
+          { "texto": "\\( x - 5 - 7 \\ge 0 \\)", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "\\( x - 5 + 7 \\ge 0 \\)",
+        "opciones": [
+          { "texto": "\\( x + 2 \\ge 0 \\)", "correcta": true },
+          { "texto": "\\( x - 2 \\ge 0 \\)", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "\\( x +2 \\ge 0 \\)",
+        "opciones": [
+          { "texto": "\\( x \\ge -2 \\)", "correcta": true },
+          { "texto": "\\( x \\le -2 \\)", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "\\( x \\ge -2 \\)",
+        "opciones": [
+          { "texto": "\\( x \\in [-2, +\\infty) \\)", "correcta": true },
+          { "texto": "\\( x \\in (-2, +\\infty) \\)", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "\\( 6 < 13 + x \\)",
+        "opciones": [
+          { "texto": "\\( 6 - 13 - x < 0 \\)", "correcta": true },
+          { "texto": "\\( 6 - 13 - x > 0 \\)", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "\\( 6 - 13 - x < 0 \\)",
+        "opciones": [
+          { "texto": "\\( -x + 6 - 13 < 0 \\)", "correcta": true },
+          { "texto": "\\( -x - 6 - 13 < 0 \\)", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "\\( -x + 6 - 13 < 0 \\)",
+        "opciones": [
+          { "texto": "\\( -x - 7 < 0 \\)", "correcta": true },
+          { "texto": "\\( -x + 7 < 0 \\)", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "\\( -x - 7 < 0 \\)",
+        "opciones": [
+          { "texto": "\\( -x < 7 \\)", "correcta": true },
+          { "texto": "\\( -x > 7 \\)", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "\\( -x < 7 \\)",
+        "opciones": [
+          { "texto": "\\( x > -7 \\)", "correcta": true },
+          { "texto": "\\( x < -7 \\)", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "\\( x > -7 \\)",
+        "opciones": [
+          { "texto": "\\( x \\in (-7, +\\infty) \\)", "correcta": true },
+          { "texto": "\\( x \\in (-\\infty, -7) \\)", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "\\( -4 \\le x + 6 \\)",
+        "opciones": [
+          { "texto": "\\( -4 - 6 \\le x \\)", "correcta": true },
+          { "texto": "\\( -4 + 6 \\le x \\)", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "\\( -4 - 6 \\le x \\)",
+        "opciones": [
+          { "texto": "\\( -10 \\le x \\)", "correcta": true },
+          { "texto": "\\( 2 \\le x \\)", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "\\( -10 \\le x \\)",
+        "opciones": [
+          { "texto": "\\( x \\ge -10 \\)", "correcta": true },
+          { "texto": "\\( x \\le -10 \\)", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "\\( x \\ge -10 \\)",
+        "opciones": [
+          { "texto": "\\( x \\in [-10, +\\infty) \\)", "correcta": true },
+          { "texto": "\\( x \\in (-\\infty, -10] \\)", "correcta": false }
+        ]
+      }
+    ]
+  }
+]

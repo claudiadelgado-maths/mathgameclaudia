@@ -4,19 +4,76 @@
     "fondo": "https://picsum.photos/1200/800?random=1",
     "pasos": [
       {
-        "pregunta": "\\( -3x > 9 \\)",
+        "pregunta": "\\( x > -3 \\)",
         "opciones": [
-          { "texto": "\\( x < -3 \\)", "correcta": true },
-          { "texto": "\\( x > -3 \\)", "correcta": false }
+          { "texto": "\\( (-3, +\\infty) \\)", "correcta": true },
+          { "texto": "\\( [-3, +\\infty) \\)", "correcta": false }
         ]
       },
       {
-        "pregunta": "\\( 2x + 3 > 7 \\)",
+        "pregunta": "\\( 4 < x \\)",
         "opciones": [
-          { "texto": "\\( x > 2 \\)", "correcta": true },
-          { "texto": "\\( x < 2 \\)", "correcta": false }
+          { "texto": "\\( (4, +\\infty) \\)", "correcta": true },
+          { "texto": "\\( (-\\infty, 4) \\)", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "\\( x < 2 \\)",
+        "opciones": [
+          { "texto": "\\( (-\\infty, 2) \\)", "correcta": true },
+          { "texto": "\\( (-\\infty, 2] \\)", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "\\( -5 > x \\)",
+        "opciones": [
+          { "texto": "\\( (-\\infty, -5) \\)", "correcta": true },
+          { "texto": "\\( (-5, +\\infty) \\)", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "\\( x \\ge 7 \\)",
+        "opciones": [
+          { "texto": "\\( [7, +\\infty) \\)", "correcta": true },
+          { "texto": "\\( (7, +\\infty) \\)", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "\\( -1 \\le x \\)",
+        "opciones": [
+          { "texto": "\\( [-1, +\\infty) \\)", "correcta": true },
+          { "texto": "\\( (-\\infty, -1] \\)", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "\\( x \\le 6 \\)",
+        "opciones": [
+          { "texto": "\\( (-\\infty, 6] \\)", "correcta": true },
+          { "texto": "\\( (-\\infty, 6) \\)", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "\\( 9 \\ge x \\)",
+        "opciones": [
+          { "texto": "\\( (-\\infty, 9] \\)", "correcta": true },
+          { "texto": "\\( (9, +\\infty) \\)", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "\\( x > 0 \\)",
+        "opciones": [
+          { "texto": "\\( (0, +\\infty) \\)", "correcta": true },
+          { "texto": "\\( (-\\infty, 0) \\)", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "\\( 3 \\le x \\)",
+        "opciones": [
+          { "texto": "\\( [3, +\\infty) \\)", "correcta": true },
+          { "texto": "\\( (3, +\\infty) \\)", "correcta": false }
         ]
       }
     ]
   }
 ]
+

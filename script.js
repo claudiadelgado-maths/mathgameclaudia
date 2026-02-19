@@ -13,11 +13,18 @@ const instruccion = document.getElementById("instruccion");
 const pregunta = document.getElementById("pregunta");
 const opcionesContenedor = document.getElementById("opciones");
 
+const nivelesBtn = document.getElementById("niveles-btn");
+const modalNiveles = document.getElementById("modal-niveles");
+const cerrarModal = document.getElementById("cerrar-modal");
+const listaNiveles = document.getElementById("lista-niveles");
+
+
 async function cargarNiveles() {
     try {
         const rutas = [
-            "data/nivel1.json",
-            "data/nivel2.json"
+            "data/nivel1.json?v=1",
+            "data/nivel2.json?v=1",
+            "data/nivel3.json?v=1"
         ];
 
         const respuestas = await Promise.all(
@@ -34,7 +41,7 @@ async function cargarNiveles() {
         cargarNivel();
 
     } catch (error) {
-        mensaje.innerText = "Error cargando niveles";
+        mensaje.innerText = "OMG XD";
         console.error(error);
     }
 }
@@ -153,6 +160,48 @@ function continuarJuego() {
     mensaje.style.fontSize = "48px";
     mensaje.innerText = "Juego completado";
 }
+
+// ===== FUNCIONES DEL MODAL DE NIVELES =====
+
+function abrirModal() {
+    renderizarNiveles();
+    modalNiveles.classList.remove("oculto");
+}
+
+function cerrarModalFunc() {
+    modalNiveles.classList.add("oculto");
+}
+
+function renderizarNiveles() {
+    listaNiveles.innerHTML = "";
+
+    niveles.forEach((nivel, index) => {
+        const cuadro = document.createElement("div");
+        cuadro.classList.add("cuadro-nivel");
+
+        if (index < nivelActual) {
+            cuadro.classList.add("completado");
+        } else {
+            cuadro.classList.add("pendiente");
+        }
+
+        cuadro.innerText = nivel.nivel;
+
+        cuadro.addEventListener("click", () => {
+            nivelActual = index;
+            cerrarModalFunc();
+            cargarNivel();
+        });
+
+        listaNiveles.appendChild(cuadro);
+    });
+}
+
+// ===== EVENT LISTENERS DEL MODAL =====
+
+nivelesBtn.addEventListener("click", abrirModal);
+cerrarModal.addEventListener("click", cerrarModalFunc);
+
 
 opcionA.addEventListener("click", () => verificar("opcionA"));
 opcionB.addEventListener("click", () => verificar("opcionB"));

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,6 +19,8 @@
     <!-- Recuadro superior -->
     <div class="header-box">
       <h1 id="game-title">Math Adventure</h1>
+
+       <button id="niveles-btn" type="button">Niveles</button>
 
       <div id="info">
         <span id="nivel-info"></span>
@@ -44,8 +47,15 @@
     </button>
 
   </div>
-
+  <div id="modal-niveles" class="modal oculto">
+    <div class="modal-contenido">
+      <span id="cerrar-modal">X</span>
+      <div id="lista-niveles"></div>
+    </div>
+  </div>
+  
   <script src="script.js"></script>
 
 </body>
+
 </html>

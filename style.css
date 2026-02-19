@@ -26,7 +26,7 @@ body {
 .header-box {
   width: 100%;
   max-width: 700px;
-  padding: 30px 25px;
+  padding: 20px 25px;
   margin-bottom: 40px;
   background: #ffffff;
   color: #111111;
@@ -34,6 +34,7 @@ body {
   border-radius: 25px;
   box-sizing: border-box;
   text-shadow: none;
+  position: relative; /* ← agregado */
 }
 
 #game-title {
@@ -52,7 +53,7 @@ body {
 }
 
 #pregunta {
-  font-size: 32px;
+  font-size: 25px;
   margin: 25px 0;
 }
 
@@ -81,7 +82,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 20px;
-  font-size: 22px;
+  font-size: 23px;
   transition: transform 0.2s ease, background 0.3s ease, box-shadow 0.3s ease;
   box-sizing: border-box;
 }
@@ -129,4 +130,92 @@ body {
 
 #continuar-btn:hover {
   background: #27a44f;
+}
+
+/* ===== BOTÓN NIVELES ===== */
+
+#niveles-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 8px 18px;
+  border-radius: 10px;
+  border: 2px solid #333;
+  background: #0044cc;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+  text-shadow: none;
+  transition: background 0.3s ease;
+}
+
+#niveles-btn:hover {
+  background: #0055ff;
+}
+
+
+/* ===== MODAL NIVELES ===== */
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.oculto {
+  display: none;
+}
+
+.modal-contenido {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  max-height: 400px;
+  overflow-y: auto;
+  min-width: 300px;
+  position: relative;
+}
+
+.cuadro-nivel {
+  width: 60px;
+  height: 60px;
+  margin: 8px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.pendiente {
+  background: #0044cc;
+}
+
+.completado {
+  background: #2ecc71;
+}
+
+/* ===== BOTÓN CERRAR (X) DEL MODAL ===== */
+
+#cerrar-modal {
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  font-size: 30px;
+  font-weight: 900;
+  color: #cc0000;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+#cerrar-modal:hover {
+  color: #ff0000;
+  transform: scale(1.2);
 }

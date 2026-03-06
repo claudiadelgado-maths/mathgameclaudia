@@ -1,5 +1,3 @@
-/* ===== CONFIGURACIÓN GLOBAL ===== */
-
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -21,8 +19,6 @@ body {
   align-items: center;
 }
 
-/* ===== RECUADRO SUPERIOR ===== */
-
 .header-box {
   width: 100%;
   max-width: 700px;
@@ -34,7 +30,7 @@ body {
   border-radius: 25px;
   box-sizing: border-box;
   text-shadow: none;
-  position: relative; /* ← agregado */
+  position: relative;
 }
 
 #game-title {
@@ -57,21 +53,19 @@ body {
   margin: 25px 0;
 }
 
-/* ===== OPCIONES RECTANGULARES ===== */
-
 #opciones {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 30px;
   width: 100%;
-  max-width: 700px; /* mismo ancho que el título */
+  max-width: 700px;
   margin-top: 20px;
 }
 
 .opcion {
-  width: 100%;              /* ocupa todo el ancho disponible */
-  height: 120px;            /* rectangular */
+  width: 100%;
+  height: 120px;
   background: #ffffff;
   color: #111111;
   text-shadow: none;
@@ -84,16 +78,12 @@ body {
   padding: 20px;
   font-size: 23px;
   transition: transform 0.2s ease, background 0.3s ease, box-shadow 0.3s ease;
-  box-sizing: border-box;
 }
 
-/* Hover original */
 .opcion:hover {
   transform: scale(1.03);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
-
-/* Estados dinámicos */
 
 .correcto {
   background-color: #b4f5b4;
@@ -104,8 +94,6 @@ body {
   background-color: #f5b4b4;
   border-color: #b22222;
 }
-
-/* ===== MENSAJE Y BOTÓN ===== */
 
 #mensaje {
   margin-top: 40px;
@@ -124,15 +112,11 @@ body {
   font-weight: bold;
   cursor: pointer;
   display: none;
-  text-shadow: none;
-  transition: background 0.3s ease;
 }
 
 #continuar-btn:hover {
   background: #27a44f;
 }
-
-/* ===== BOTÓN NIVELES ===== */
 
 #niveles-btn {
   position: absolute;
@@ -145,77 +129,25 @@ body {
   color: #ffffff;
   font-weight: bold;
   cursor: pointer;
-  text-shadow: none;
-  transition: background 0.3s ease;
 }
 
 #niveles-btn:hover {
   background: #0055ff;
 }
 
-
-/* ===== MODAL NIVELES ===== */
-
-.modal {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.6);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-}
-
-.oculto {
-  display: none;
-}
-
-.modal-contenido {
-  background: #ffffff;
-  padding: 30px;
-  border-radius: 15px;
-  max-height: 400px;
-  overflow-y: auto;
-  min-width: 300px;
-  position: relative;
-}
-
-.cuadro-nivel {
-  width: 60px;
-  height: 60px;
-  margin: 8px;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-  cursor: pointer;
-  font-weight: bold;
-  color: #ffffff;
-}
-
-.pendiente {
-  background: #0044cc;
-}
-
-.completado {
-  background: #2ecc71;
-}
-
-/* ===== BOTÓN CERRAR (X) DEL MODAL ===== */
-
-#cerrar-modal {
+#inicio-btn {
   position: absolute;
-  top: 12px;
-  right: 18px;
-  font-size: 30px;
-  font-weight: 900;
-  color: #cc0000;
+  top: 20px;
+  left: 20px;
+  padding: 8px 18px;
+  border-radius: 10px;
+  border: 2px solid #333;
+  background: #555555;
+  color: #ffffff;
+  font-weight: bold;
   cursor: pointer;
-  user-select: none;
-  transition: transform 0.2s ease, color 0.2s ease;
 }
 
-#cerrar-modal:hover {
-  color: #ff0000;
-  transform: scale(1.2);
+#inicio-btn:hover {
+  background: #777777;
 }

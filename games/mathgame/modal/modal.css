@@ -1,0 +1,67 @@
+/* ===== MODAL ===== */
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.oculto {
+  display: none;
+}
+
+.modal-contenido {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  max-height: 400px;
+  overflow-y: auto;
+  min-width: 300px;
+  position: relative;
+}
+
+/* ===== CUADROS DE NIVEL ===== */
+
+.cuadro-nivel {
+  width: 60px;
+  height: 60px;
+  margin: 8px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.pendiente {
+  background: #0044cc;
+}
+
+.completado {
+  background: #2ecc71;
+}
+
+/* ===== BOTÓN CERRAR ===== */
+
+#cerrar-modal {
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  font-size: 30px;
+  font-weight: 900;
+  color: #cc0000;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+#cerrar-modal:hover {
+  color: #ff0000;
+  transform: scale(1.2);
+}

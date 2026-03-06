@@ -1,0 +1,71 @@
+/* ===== CONFIGURACIÓN GENERAL ===== */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: #ffffff;
+}
+
+/* ===== HEADER ===== */
+
+.main-header {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.main-header h1 {
+    font-size: 42px;
+    margin: 0;
+}
+
+/* ===== CONTENEDOR PRINCIPAL ===== */
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+/* ===== LISTA DE JUEGOS ===== */
+
+.game-list {
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+.game-list h2 {
+    margin-bottom: 30px;
+}
+
+/* ===== TARJETA DE JUEGO ===== */
+
+.game-card {
+    background: #1e293b;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.game-card h3 {
+    margin-top: 0;
+}
+
+/* ===== BOTÓN ===== */
+
+#play-mathgame {
+    margin-top: 20px;
+    padding: 12px 28px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+#play-mathgame:hover {
+    background: #1d4ed8;
+}

@@ -2,59 +2,41 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Math Adventure</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Math Games</title>
 
-  <link rel="stylesheet" href="style.css">
-
-  <!-- MathJax -->
-  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<link rel="stylesheet" href="index.css">
 </head>
 
 <body>
 
-  <div id="game">
+<header class="main-header">
+    <h1>Math Games</h1>
+</header>
 
-    <!-- Recuadro superior -->
-    <div class="header-box">
-      <h1 id="game-title">Math Adventure</h1>
+<main class="main-container">
 
-       <button id="niveles-btn" type="button">Niveles</button>
+    <section class="game-list">
 
-      <div id="info">
-        <span id="nivel-info"></span>
-        <span id="paso-info"></span>
-      </div>
+        <h2>Selecciona un juego</h2>
 
-      <p id="instruccion">Elige la opción correcta</p>
+        <div class="game-card">
 
-      <div id="pregunta"></div>
-    </div>
+            <h3>Math Adventure</h3>
+            <p>Resuelve problemas matemáticos paso a paso.</p>
 
-    <!-- Opciones -->
-    <div id="opciones">
-      <div class="opcion" id="opcionA"></div>
-      <div class="opcion" id="opcionB"></div>
-    </div>
+            <button id="play-mathgame">
+                Jugar
+            </button>
 
-    <!-- Mensaje -->
-    <div id="mensaje"></div>
+        </div>
 
-    <!-- Botón -->
-    <button id="continuar-btn" type="button">
-      Continuar
-    </button>
+    </section>
 
-  </div>
-  <div id="modal-niveles" class="modal oculto">
-    <div class="modal-contenido">
-      <span id="cerrar-modal">X</span>
-      <div id="lista-niveles"></div>
-    </div>
-  </div>
-  
-  <script src="script.js"></script>
+</main>
+
+<script src="index.js"></script>
 
 </body>
 

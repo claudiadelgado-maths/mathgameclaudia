@@ -24,13 +24,24 @@
   position: relative;
 }
 
+
+/* ===== CONTENEDOR DE NIVELES ===== */
+
+#lista-niveles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  justify-items: center;
+  margin-top: 10px;
+}
+
+
 /* ===== CUADROS DE NIVEL ===== */
 
 .cuadro-nivel {
   width: 60px;
   height: 60px;
-  margin: 8px;
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
@@ -46,6 +57,7 @@
 .completado {
   background: #2ecc71;
 }
+
 
 /* ===== BOTÓN CERRAR ===== */
 

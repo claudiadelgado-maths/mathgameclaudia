@@ -32,9 +32,44 @@ function playLevelUpSound() {
 }
 
 function startBackgroundMusic() {
-    soundMusic.play();
+    soundMusic.play().catch(() => {});
 }
 
 function stopBackgroundMusic() {
     soundMusic.pause();
 }
+
+
+// ============================
+// INICIAR MUSICA CON INTERACCION
+// (soluciona el problema de F5)
+// ============================
+
+function initMusicOnce() {
+
+    startBackgroundMusic();
+
+    document.removeEventListener("click", initMusicOnce);
+    document.removeEventListener("keydown", initMusicOnce);
+
+}
+
+document.addEventListener("click", initMusicOnce);
+document.addEventListener("keydown", initMusicOnce);
+
+
+// ============================
+// CONTROL DE CAMBIO DE PESTAÑA
+// ============================
+
+document.addEventListener("visibilitychange", () => {
+
+    if (document.hidden) {
+        if (!soundMusic.paused) {
+            soundMusic.pause();
+        }
+    } else {
+        soundMusic.play().catch(() => {});
+    }
+
+});

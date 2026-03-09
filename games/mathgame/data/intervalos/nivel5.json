@@ -1,0 +1,64 @@
+[
+  {
+    "nivel": 5,
+    "fondo": "https://picsum.photos/1200/800?random=5",
+    "pasos": [
+      {
+        "pregunta": "\\( 3(2x + 5) < 3x - 26 \\)",
+        "opciones": [
+          { "texto": "\\( 6x + 15 < 3x - 26 \\)", "correcta": true },
+          { "texto": "\\( 6x + 5 < 3x - 26 \\)", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "\\( 6x + 15 < 3x - 26 \\)",
+        "opciones": [
+          { "texto": "\\( 6x + 15 - 3x + 26 < 0 \\)", "correcta": true },
+          { "texto": "\\( 6x + 15 + 3x + 26 < 0 \\)", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "\\( 6x + 15 - 3x + 26 < 0 \\)",
+        "opciones": [
+          { "texto": "\\( 6x - 3x + 15 + 26 < 0 \\)", "correcta": true },
+          { "texto": "\\( 6x + 3x + 15 + 26 < 0 \\)", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "\\( 6x - 3x + 15 + 26 < 0 \\)",
+        "opciones": [
+          { "texto": "\\( 3x + 41 < 0 \\)", "correcta": true },
+          { "texto": "\\( 3 + 41x < 0 \\)", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "\\( 3x + 41 < 0 \\)",
+        "opciones": [
+          { "texto": "\\( 3x < -41 \\)", "correcta": true },
+          { "texto": "\\( 3x > -41 \\)", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "\\( 3x < -41 \\)",
+        "opciones": [
+          { "texto": "\\( x < \\dfrac{-41}{3} \\)", "correcta": true },
+          { "texto": "\\( x < \\dfrac{3}{-41} \\)", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "\\( x < \\dfrac{-41}{3} \\)",
+        "opciones": [
+          { "texto": "\\( x < -13.67 \\)", "correcta": true },
+          { "texto": "\\( x < 13.67 \\)", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "\\( x < -13.67 \\)",
+        "opciones": [
+          { "texto": "\\( x \\in (-\\infty, -13.67) \\)", "correcta": true },
+          { "texto": "\\( x \\in (-13.67, +\\infty) \\)", "correcta": false }
+        ]
+      }
+    ]
+  }
+]

@@ -4,19 +4,25 @@ async function cargarNiveles() {
 
     try {
 
-        const rutas = [
-            "../data/intervalos/nivel1.json",
-            "../data/intervalos/nivel2.json",
-            "../data/intervalos/nivel3.json"
-        ];
+        const datos = [];
+        let i = 1;
 
-        const respuestas = await Promise.all(
-            rutas.map(ruta => fetch(ruta))
-        );
+        while (true) {
 
-        const datos = await Promise.all(
-            respuestas.map(res => res.json())
-        );
+            const ruta = `../data/intervalos/nivel${i}.json?v=1`;
+
+            const res = await fetch(ruta);
+
+            if (!res.ok) {
+                break; // cuando ya no existe el siguiente nivel se detiene
+            }
+
+            const json = await res.json();
+            datos.push(json);
+
+            i++;
+
+        }
 
         niveles = datos.flat();
 

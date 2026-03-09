@@ -44,5 +44,5 @@ function spriteWrong() {
 }
 
 function spriteLevelUp() {
-    showSprite("nivelsuperado", 600, 3000); // 3 segundos
+    showSprite("nivelsuperado", 500, 3000); // 3 segundos
 }

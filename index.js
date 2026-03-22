@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     botonJugar.addEventListener("click", () => {
 
-        window.location.href = "games/mathgame/game/juego.html";
+        window.location.href = "games/games.html";
 
     });
 

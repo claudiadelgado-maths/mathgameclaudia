@@ -1,0 +1,57 @@
+[
+  {
+    "nivel": 2,
+    "fondo": "https://picsum.photos/1200/800?random=132",
+    "pasos": [
+      {
+        "pregunta": "Centro de \\( (x-2)^2 + (y-3)^2 = 9 \\)",
+        "opciones": [
+          { "texto": "\\( (2,3) \\)", "correcta": true },
+          { "texto": "\\( (-2,-3) \\)", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "Centro de \\( (x+1)^2 + (y-4)^2 = 16 \\)",
+        "opciones": [
+          { "texto": "\\( (-1,4) \\)", "correcta": true },
+          { "texto": "\\( (1,4) \\)", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "Centro de \\( (x-5)^2 + (y+2)^2 = 25 \\)",
+        "opciones": [
+          { "texto": "\\( (5,-2) \\)", "correcta": true },
+          { "texto": "\\( (-5,2) \\)", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "Centro de \\( (x+3)^2 + (y+3)^2 = 4 \\)",
+        "opciones": [
+          { "texto": "\\( (-3,-3) \\)", "correcta": true },
+          { "texto": "\\( (3,3) \\)", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "Centro de \\( (x-7)^2 + (y-1)^2 = 49 \\)",
+        "opciones": [
+          { "texto": "\\( (7,1) \\)", "correcta": true },
+          { "texto": "\\( (-7,-1) \\)", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "Centro de \\( (x+4)^2 + (y-2)^2 = 36 \\)",
+        "opciones": [
+          { "texto": "\\( (-4,2) \\)", "correcta": true },
+          { "texto": "\\( (4,2) \\)", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "Centro de \\( (x-1)^2 + (y+6)^2 = 9 \\)",
+        "opciones": [
+          { "texto": "\\( (1,-6) \\)", "correcta": true },
+          { "texto": "\\( (-1,6) \\)", "correcta": false }
+        ]
+      }
+    ]
+  }
+]

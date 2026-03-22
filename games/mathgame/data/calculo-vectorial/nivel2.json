@@ -1,0 +1,57 @@
+[
+  {
+    "nivel": 2,
+    "fondo": "https://picsum.photos/1200/800?random=92",
+    "pasos": [
+      {
+        "pregunta": "\\( f(x,y)=x^2+y^2 \\)",
+        "opciones": [
+          { "texto": "\\( (2x,2y) \\)", "correcta": true },
+          { "texto": "\\( (x,y) \\)", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "\\( f(x,y)=x^2+y \\)",
+        "opciones": [
+          { "texto": "\\( (2x,1) \\)", "correcta": true },
+          { "texto": "\\( (x,y) \\)", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "\\( f(x,y)=x+y \\)",
+        "opciones": [
+          { "texto": "\\( (1,1) \\)", "correcta": true },
+          { "texto": "\\( (x,y) \\)", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "\\( \\partial_x(x^2+y^2) \\)",
+        "opciones": [
+          { "texto": "\\( 2x \\)", "correcta": true },
+          { "texto": "\\( 2y \\)", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "\\( \\partial_y(x^2+y^2) \\)",
+        "opciones": [
+          { "texto": "\\( 2y \\)", "correcta": true },
+          { "texto": "\\( 2x \\)", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "\\( f(x,y)=x^3+y \\)",
+        "opciones": [
+          { "texto": "\\( (3x^2,1) \\)", "correcta": true },
+          { "texto": "\\( (x^2,y) \\)", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "\\( \\partial_x(y^2) \\)",
+        "opciones": [
+          { "texto": "0", "correcta": true },
+          { "texto": "\\( 2y \\)", "correcta": false }
+        ]
+      }
+    ]
+  }
+]

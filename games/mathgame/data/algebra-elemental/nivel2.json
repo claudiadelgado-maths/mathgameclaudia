@@ -1,0 +1,67 @@
+[
+  {
+    "nivel": 2,
+    "fondo": "https://picsum.photos/1200/800?random=22",
+    "pasos": [
+      {
+        "pregunta": "\\( \\dfrac{x}{3} = 5 \\)",
+        "opciones": [
+          { "texto": "\\( x = 5 \\cdot 3 \\)", "correcta": true },
+          { "texto": "\\( x = \\dfrac{5}{3} \\)", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "\\( x = 5 \\cdot 3 \\)",
+        "opciones": [
+          { "texto": "\\( x = 15 \\)", "correcta": true },
+          { "texto": "\\( x = 8 \\)", "correcta": false }
+        ]
+      },
+
+      {
+        "pregunta": "\\( \\dfrac{x}{4} = 6 \\)",
+        "opciones": [
+          { "texto": "\\( x = 6 \\cdot 4 \\)", "correcta": true },
+          { "texto": "\\( x = \\dfrac{6}{4} \\)", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "\\( x = 6 \\cdot 4 \\)",
+        "opciones": [
+          { "texto": "\\( x = 24 \\)", "correcta": true },
+          { "texto": "\\( x = 10 \\)", "correcta": false }
+        ]
+      },
+
+      {
+        "pregunta": "\\( 5x = 20 \\)",
+        "opciones": [
+          { "texto": "\\( x = \\dfrac{20}{5} \\)", "correcta": true },
+          { "texto": "\\( x = 20 \\cdot 5 \\)", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "\\( x = \\dfrac{20}{5} \\)",
+        "opciones": [
+          { "texto": "\\( x = 4 \\)", "correcta": true },
+          { "texto": "\\( x = 25 \\)", "correcta": false }
+        ]
+      },
+
+      {
+        "pregunta": "\\( 7x = 21 \\)",
+        "opciones": [
+          { "texto": "\\( x = \\dfrac{21}{7} \\)", "correcta": true },
+          { "texto": "\\( x = 21 \\cdot 7 \\)", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "\\( x = \\dfrac{21}{7} \\)",
+        "opciones": [
+          { "texto": "\\( x = 3 \\)", "correcta": true },
+          { "texto": "\\( x = 14 \\)", "correcta": false }
+        ]
+      }
+    ]
+  }
+]

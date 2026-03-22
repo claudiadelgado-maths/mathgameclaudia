@@ -5,7 +5,9 @@
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Math Adventure</title>
+
+<!-- 🔥 Título limpio (sin "Cargando...") -->
+<title>Juego</title>
 
 <link rel="stylesheet" href="game.css?v=1">
 <link rel="stylesheet" href="../modal/modal.css?v=1">
@@ -21,9 +23,9 @@
 
     <div class="header-box">
 
-        <h1 id="game-title">Math Adventure</h1>
+        <!-- 🔥 Sin texto inicial -->
+        <h1 id="game-title"></h1>
 
-        <!-- Botones superiores -->
         <button id="inicio-btn" type="button">Inicio</button>
         <button id="niveles-btn" type="button">Niveles</button>
 
@@ -52,32 +54,20 @@
 </div>
 
 <!-- Modal niveles -->
-
 <div id="modal-niveles" class="modal oculto">
-
     <div class="modal-contenido">
-
         <span id="cerrar-modal">X</span>
-
         <div id="lista-niveles"></div>
-
     </div>
-
 </div>
 
 <!-- Scripts -->
-
-<!-- efectos -->
 <script src="../effects/sound.js?v=2"></script>
 <script src="../effects/sprites.js?v=2"></script>
-
-<!-- motor del juego -->
 <script src="../engine/loader.js?v=2"></script>
 <script src="../engine/engine.js?v=2"></script>
-
-<!-- interfaz -->
 <script src="../modal/modal.js?v=2"></script>
-<script src="game.js?v=2"></script>
-</body>
+<script src="game.js?v=3"></script>
 
+</body>
 </html>

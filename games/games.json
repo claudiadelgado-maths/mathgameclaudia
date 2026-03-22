@@ -1,0 +1,86 @@
+[
+  {
+    "id": "aritmetica",
+    "titulo": "Aritmética",
+    "descripcion": "• Operaciones básicas\n• Fracciones y decimales\n• Porcentajes\n• Potencias y raíces\n• Propiedades de los números",
+    "imagen": "img/aritmetica.webp"
+  },
+  {
+    "id": "estadistica-descriptiva",
+    "titulo": "Estadística Descriptiva",
+    "descripcion": "• Organización de datos\n• Tablas y gráficas\n• Media, mediana y moda\n• Medidas de dispersión\n• Interpretación de datos",
+    "imagen": "img/estadistica-descriptiva.webp"
+  },
+  {
+    "id": "probabilidad",
+    "titulo": "Probabilidad",
+    "descripcion": "• Experimentos aleatorios\n• Eventos y espacio muestral\n• Probabilidad simple\n• Probabilidad condicional\n• Regla de la suma y producto",
+    "imagen": "img/probabilidad.webp"
+  },
+  {
+    "id": "algebra-elemental",
+    "titulo": "Álgebra Elemental",
+    "descripcion": "• Expresiones algebraicas\n• Ecuaciones lineales\n• Sistemas de ecuaciones\n• Productos notables\n• Factorización",
+    "imagen": "img/algebra-elemental.webp"
+  },
+  {
+    "id": "geometria-plana",
+    "titulo": "Geometría Plana",
+    "descripcion": "• Figuras básicas\n• Ángulos\n• Perímetros y áreas\n• Triángulos y polígonos\n• Teorema de Pitágoras",
+    "imagen": "img/geometria-plana.webp"
+  },
+  {
+    "id": "geometria-analitica",
+    "titulo": "Geometría Analítica",
+    "descripcion": "• Plano cartesiano\n• Distancia entre puntos\n• Recta y pendiente\n• Circunferencia\n• Parábolas básicas",
+    "imagen": "img/geometria-analitica.webp"
+  },
+  {
+    "id": "precalculo",
+    "titulo": "Precálculo",
+    "descripcion": "• Funciones\n• Polinomios\n• Funciones racionales\n• Funciones exponenciales y logarítmicas\n• Trigonometría básica",
+    "imagen": "img/precalculo.webp"
+  },
+  {
+    "id": "calculo-diferencial",
+    "titulo": "Cálculo Diferencial",
+    "descripcion": "• Límites\n• Derivadas\n• Reglas de derivación\n• Aplicaciones de la derivada\n• Optimización",
+    "imagen": "img/calculo-diferencial.webp"
+  },
+  {
+    "id": "calculo-integral",
+    "titulo": "Cálculo Integral",
+    "descripcion": "• Integrales indefinidas\n• Integrales definidas\n• Métodos de integración\n• Área bajo la curva\n• Aplicaciones",
+    "imagen": "img/calculo-integral.webp"
+  },
+  {
+    "id": "variable-aleatoria",
+    "titulo": "Variable Aleatoria",
+    "descripcion": "• Variables discretas y continuas\n• Distribuciones de probabilidad\n• Esperanza matemática\n• Varianza\n• Funciones de distribución",
+    "imagen": "img/variable-aleatoria.webp"
+  },
+  {
+    "id": "ecuaciones-diferenciales",
+    "titulo": "Ecuaciones Diferenciales",
+    "descripcion": "• Ecuaciones de primer orden\n• Ecuaciones lineales\n• Separación de variables\n• Soluciones generales\n• Aplicaciones",
+    "imagen": "img/ecuaciones-diferenciales.webp"
+  },
+  {
+    "id": "algebra-lineal",
+    "titulo": "Álgebra Lineal",
+    "descripcion": "• Vectores\n• Matrices\n• Sistemas de ecuaciones\n• Determinantes\n• Espacios vectoriales",
+    "imagen": "img/algebra-lineal.webp"
+  },
+  {
+    "id": "calculo-vectorial",
+    "titulo": "Cálculo Vectorial",
+    "descripcion": "• Funciones de varias variables\n• Gradiente\n• Divergencia y rotacional\n• Integrales múltiples\n• Campos vectoriales",
+    "imagen": "img/calculo-vectorial.webp"
+  },
+  {
+    "id": "estadistica-inferencial",
+    "titulo": "Estadística Inferencial",
+    "descripcion": "• Muestreo\n• Intervalos de confianza\n• Pruebas de hipótesis\n• Distribuciones\n• Regresión básica",
+    "imagen": "img/estadistica-inferencial.webp"
+  }
+]

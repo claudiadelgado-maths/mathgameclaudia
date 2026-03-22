@@ -1,4 +1,20 @@
+// 🔥 EJECUCIÓN INMEDIATA (ANTES DE QUE CARGUE EL DOM)
+const params = new URLSearchParams(window.location.search);
+const titulo = params.get("title");
+
+if (titulo) {
+    document.title = titulo;
+}
+
 document.addEventListener("DOMContentLoaded", () => {
+
+    // 🔥 TÍTULO EN EL DOM
+    if (titulo) {
+        const titleElement = document.getElementById("game-title");
+        if (titleElement) {
+            titleElement.textContent = titulo;
+        }
+    }
 
     const opcionA = document.getElementById("opcionA");
     const opcionB = document.getElementById("opcionB");
@@ -20,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Iniciar juego
     iniciarJuego();
 
-    // Iniciar música de fondo
+    // Música
     startBackgroundMusic();
 
 });

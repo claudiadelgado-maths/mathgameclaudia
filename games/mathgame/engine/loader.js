@@ -1,20 +1,32 @@
 let niveles = [];
 
+function obtenerJuego() {
+    const params = new URLSearchParams(window.location.search);
+    return params.get("game");
+}
+
 async function cargarNiveles() {
 
     try {
+
+        const juego = obtenerJuego();
+
+        if (!juego) {
+            console.error("No se especificó el juego");
+            return [];
+        }
 
         const datos = [];
         let i = 1;
 
         while (true) {
 
-            const ruta = `../data/intervalos/nivel${i}.json?v=1`;
+            const ruta = `../data/${juego}/nivel${i}.json?v=1`;
 
             const res = await fetch(ruta);
 
             if (!res.ok) {
-                break; // cuando ya no existe el siguiente nivel se detiene
+                break;
             }
 
             const json = await res.json();

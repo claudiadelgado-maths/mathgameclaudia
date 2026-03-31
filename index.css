@@ -1,128 +1,230 @@
-/* ===== CONFIGURACIÓN GENERAL ===== */
+:root {
+    --bg-deep: #09111f;
+    --bg-card: rgba(7, 17, 33, 0.78);
+    --bg-soft: rgba(255, 255, 255, 0.08);
+    --line: rgba(255, 255, 255, 0.12);
+    --text-main: #f6f7fb;
+    --text-soft: #c9d4e5;
+    --accent: #f59e0b;
+    --accent-soft: #ffd38a;
+    --blue-main: #1e88e5;
+    --blue-deep: #125bb6;
+    --teal-main: #0f766e;
+    --teal-deep: #0a5b55;
+    --shadow: 0 28px 70px rgba(0, 0, 0, 0.35);
+}
+
+* {
+    box-sizing: border-box;
+}
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    color: #ffffff;
-
-    background-image: url("fondoportada.png");
+    font-family: "Source Sans 3", sans-serif;
+    color: var(--text-main);
+    background-color: var(--bg-deep);
+    background-image:
+        linear-gradient(180deg, rgba(3, 9, 19, 0.72), rgba(3, 9, 19, 0.9)),
+        url("fondoportada.png");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background:
+        radial-gradient(circle at top left, rgba(30, 136, 229, 0.18), transparent 32%),
+        radial-gradient(circle at top right, rgba(245, 158, 11, 0.18), transparent 28%),
+        radial-gradient(circle at bottom center, rgba(15, 118, 110, 0.16), transparent 30%);
+}
 
-/* ===== HEADER ===== */
+.page-shell {
+    position: relative;
+    z-index: 1;
+    width: min(1120px, calc(100% - 48px));
+    margin: 0 auto;
+    padding: 34px 0 40px;
+}
+
+.main-header,
+.about-project {
+    border: 1px solid var(--line);
+    background: var(--bg-card);
+    backdrop-filter: blur(12px);
+    box-shadow: var(--shadow);
+}
 
 .main-header {
-    text-align: center;
-    padding: 60px 20px;
-    background: rgba(0,0,0,0.5);
+    border-radius: 36px;
+    padding: 86px 72px;
 }
 
-.main-header h1 {
-    font-size: 48px;
+.hero-copy {
+    max-width: 760px;
+}
+
+.hero-copy h1 {
+    font-family: "Sora", sans-serif;
     margin: 0;
+    font-size: clamp(3.2rem, 5vw, 5.2rem);
+    line-height: 0.98;
+    letter-spacing: -0.04em;
 }
 
+.hero-description {
+    max-width: 600px;
+    margin: 22px 0 0;
+    font-size: 1.22rem;
+    line-height: 1.6;
+    color: var(--text-soft);
+}
 
-/* ===== CONTENEDOR PRINCIPAL ===== */
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 34px;
+}
+
+.hero-button {
+    min-width: 220px;
+    padding: 16px 28px;
+    border-radius: 999px;
+    border: none;
+    font-family: "Sora", sans-serif;
+    font-size: 1.02rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.hero-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 28px rgba(0, 0, 0, 0.22);
+}
+
+.primary-button {
+    background: linear-gradient(135deg, #1e88e5, #3057d5);
+    color: #ffffff;
+}
+
+.secondary-button {
+    background: linear-gradient(135deg, #ef8f00, #d97706);
+    color: #ffffff;
+}
 
 .main-container {
-    display: flex;
-    justify-content: center;
-    padding: 40px 20px;
+    padding-top: 22px;
 }
-
-
-/* ===== LISTA DE JUEGOS ===== */
-
-.game-list {
-    max-width: 600px;
-    width: 100%;
-    text-align: center;
-}
-
-.game-list h2 {
-    margin-bottom: 30px;
-}
-
-
-/* ===== TARJETA DE JUEGO ===== */
-
-.game-card {
-    background: rgba(30,41,59,0.9);
-    border-radius: 16px;
-    padding: 30px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
-}
-
-.game-card h3 {
-    margin-top: 0;
-}
-
-
-/* ===== BOTÓN ===== */
-
-#play-mathgame {
-    margin-top: 20px;
-    padding: 12px 28px;
-    font-size: 18px;
-    border: none;
-    border-radius: 10px;
-    background: #2563eb;
-    color: white;
-    cursor: pointer;
-    transition: background 0.2s ease;
-}
-
-#play-mathgame:hover {
-    background: #1d4ed8;
-}
-
-
-/* ===== SECCIÓN DEL PROYECTO ===== */
 
 .about-project {
-    text-align: center;
-    max-width: 700px;
-    margin: 60px auto;
-    padding: 20px;
-    background: rgba(0,0,0,0.6);
-    border-radius: 12px;
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.9fr);
+    gap: 26px;
+    padding: 28px;
+    border-radius: 30px;
 }
 
-.about-project p {
-    line-height: 1.6;
+.about-copy h2 {
+    font-family: "Sora", sans-serif;
+    margin: 0 0 12px;
+    font-size: clamp(1.9rem, 3vw, 2.5rem);
 }
 
-.autor {
-    margin-top: 20px;
-    font-size: 18px;
+.about-copy p {
+    margin: 0;
+    max-width: 520px;
+    color: var(--text-soft);
+    font-size: 1.04rem;
+    line-height: 1.65;
 }
 
-
-/* ===== REDES ===== */
+.about-links {
+    display: grid;
+    gap: 18px;
+    align-content: center;
+    justify-items: start;
+}
 
 .social-links {
-    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.social-links a,
+.whatsapp a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 46px;
+    padding: 10px 16px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
 }
 
 .social-links a {
-    color: #60a5fa;
-    text-decoration: none;
-    margin: 0 10px;
-    font-weight: bold;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid var(--line);
+    color: var(--text-main);
 }
 
-.social-links a:hover {
-    text-decoration: underline;
+.social-links a:hover,
+.whatsapp a:hover {
+    transform: translateY(-2px);
 }
-
-
-/* ===== WHATSAPP ===== */
 
 .whatsapp {
-    margin-top: 20px;
-    font-size: 18px;
+    margin: 0;
+}
+
+.whatsapp a {
+    background: linear-gradient(135deg, #14b86a, #118a51);
+    color: #ffffff;
+}
+
+@media (max-width: 900px) {
+    .about-project {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    .page-shell {
+        width: min(100% - 18px, 1160px);
+        padding-top: 14px;
+        padding-bottom: 22px;
+    }
+
+    .main-header,
+    .about-project {
+        padding: 20px;
+        border-radius: 24px;
+    }
+
+    .main-header {
+        padding: 52px 24px;
+    }
+
+    .hero-description {
+        font-size: 1.05rem;
+    }
+
+    .hero-actions,
+    .social-links {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-button,
+    .social-links a,
+    .whatsapp a {
+        width: 100%;
+    }
 }

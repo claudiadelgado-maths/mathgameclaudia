@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Repositorio de cosas matemáticas</title>
+  <link rel="stylesheet" href="repositorio.css?v=2">
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+  <div class="page-overlay"></div>
+
+  <header class="repo-header">
+    <a class="back-link" href="../index.html">Inicio</a>
+    <div class="hero-copy">
+      <h1>Repositorio de cosas matemáticas</h1>
+      <p class="hero-text">
+        Aquí se publican contribuciones enviadas por la comunidad.
+      </p>
+      <div class="hero-action">
+        <p class="hero-action-text">Envía tu aporte aquí</p>
+        <a class="contact-button" href="https://wa.me/34661174067?text=Hola%20me%20ayudas%20en%20matematicas" target="_blank">
+          Enviar por WhatsApp
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="repo-main">
+    <section class="repo-panel">
+      <div class="section-heading">
+        <div>
+          <p class="panel-label">Publicaciones</p>
+          <h2>Aportaciones publicadas</h2>
+        </div>
+        <p id="repo-status" class="repo-status">Cargando publicaciones...</p>
+      </div>
+
+      <div id="repo-feed" class="repo-feed"></div>
+    </section>
+  </main>
+
+  <script src="repositorio.js?v=2"></script>
+</body>
+</html>

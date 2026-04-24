@@ -5,60 +5,51 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ayuda en Matemáticas 24/7</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="index.css?v=1">
+<link rel="stylesheet" href="index.css?v=2">
 </head>
 
 <body>
 
-<div class="page-shell">
-    <header class="main-header">
-        <section class="hero-copy">
-            <h1>Ayuda en Matemáticas 24/7</h1>
-            
+<main id="portada" class="portada" aria-label="Portada principal">
 
-            <div class="hero-actions">
-                <button id="play-mathgame" class="hero-button primary-button">
-                    Ir a los juegos
-                </button>
+    <section id="game-stage" class="game-stage" aria-label="Mapa principal">
+        <img class="stage-background" src="fondo_portada.png" alt="">
+        <div id="scene-items" class="scene-items"></div>
+    </section>
 
-                <button id="open-repository" class="hero-button secondary-button">
-                    Ir al repositorio
-                </button>
-            </div>
-        </section>
-    </header>
+    <button id="info-rail" class="edge-rail info-rail" type="button" aria-label="Abrir información">
+        <span>Información</span>
+    </button>
 
-    <main class="main-container">
-        <section class="about-project">
-            <div class="about-copy">
-                <h2>Claudia Delgado Eslava</h2>
-                <p>
-                    Proyecto de apoyo para el aprendizaje matemático.
-                </p>
-            </div>
+    <button id="settings-rail" class="edge-rail settings-rail" type="button" aria-label="Abrir mi cuenta">
+        <span>Mi cuenta</span>
+    </button>
 
-            <div class="about-links">
-                <div class="social-links">
-                    <a href="https://www.facebook.com/inmaculadaclaudia" target="_blank">Facebook</a>
-                    <a href="https://www.instagram.com/claudiadelgado024/" target="_blank">Instagram</a>
-                    <a href="https://www.youtube.com/@ClaudiaDelgadoEslava" target="_blank">YouTube</a>
-                </div>
+</main>
 
-                <p class="whatsapp">
-                    <a href="https://wa.me/34661174067?text=Hola%20me%20ayudas%20en%20matematicas" target="_blank">
-                        WhatsApp: +34 661 17 40 67
-                    </a>
-                </p>
-            </div>
-        </section>
-    </main>
-</div>
+<div id="modal-backdrop" class="modal-backdrop oculto"></div>
 
-<script src="index.js?v=1"></script>
+<section id="info-modal" class="mini-modal oculto" aria-label="Información de contacto">
+    <button class="close-modal" type="button" data-close-modal aria-label="Cerrar">×</button>
+    <h2>Información</h2>
+    <p>Proyecto desarrollado por <strong>Claudia Delgado Eslava</strong></p>
+
+    <div class="modal-links">
+        <a href="https://www.facebook.com/inmaculadaclaudia" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com/claudiadelgado024/" target="_blank">Instagram</a>
+        <a href="https://www.youtube.com/@ClaudiaDelgadoEslava" target="_blank">YouTube</a>
+        <a class="whatsapp-link" href="https://wa.me/34661174067?text=Hola%20me%20ayudas%20en%20matematicas" target="_blank">
+            WhatsApp: +34 661 17 40 67
+        </a>
+    </div>
+</section>
+
+<section id="settings-modal" class="mini-modal oculto" aria-label="Mi cuenta">
+    <button class="close-modal" type="button" data-close-modal aria-label="Cerrar">×</button>
+    <h2>Mi cuenta</h2>
+</section>
+
+<script src="index.js?v=2"></script>
 
 </body>
 </html>

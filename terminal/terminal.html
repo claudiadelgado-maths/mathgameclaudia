@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terminal</title>
+  <link rel="stylesheet" href="terminal.css?v=3">
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+<main class="terminal-page">
+  <section class="terminal-stage" aria-label="Terminal">
+    <img class="terminal-background" src="portada_terminal.png" alt="">
+
+    <div class="terminal-panel">
+      <header class="terminal-header">
+        <h1>Repositorio de cosas matemáticas</h1>
+        <p>Aquí se publican contribuciones enviadas por la comunidad.</p>
+
+        <a class="contact-button" href="https://wa.me/34661174067?text=Hola%20me%20ayudas%20en%20matematicas" target="_blank">
+          Envía tu aporte aquí
+        </a>
+      </header>
+
+      <section class="repo-panel">
+        <div class="section-heading">
+          <div>
+            <p class="panel-label">Publicaciones</p>
+            <h2>Aportaciones publicadas</h2>
+          </div>
+          <p id="repo-status" class="repo-status">Cargando publicaciones...</p>
+        </div>
+
+        <div id="repo-feed" class="repo-feed"></div>
+      </section>
+    </div>
+  </section>
+
+  <button id="inicio-rail" class="edge-rail inicio-rail" type="button">
+    <span>Inicio</span>
+  </button>
+</main>
+
+<script src="terminal.js?v=3"></script>
+
+</body>
+</html>

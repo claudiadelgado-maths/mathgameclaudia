@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bosque</title>
+  <link rel="stylesheet" href="bosque.css?v=2">
+</head>
+<body>
+
+<main id="bosque-page" class="bosque-page" aria-label="Selector de juegos">
+  <section id="bosque-stage" class="bosque-stage">
+    <img class="bosque-background" src="fondo_bosque_1.png" alt="">
+
+    <button id="prev-page" class="nav-arrow nav-arrow-up" type="button" aria-label="Ver juegos anteriores">
+      &#9650;
+    </button>
+
+    <div id="bosque-container" class="bosque-container"></div>
+
+    <div id="page-dots" class="page-dots" aria-label="Páginas de juegos"></div>
+
+    <button id="next-page" class="nav-arrow nav-arrow-down" type="button" aria-label="Ver siguientes juegos">
+      &#9660;
+    </button>
+  </section>
+
+  <button id="inicio-rail" class="edge-rail inicio-rail" type="button">
+    <span>Inicio</span>
+  </button>
+
+  <button id="empty-rail" class="edge-rail empty-rail" type="button" aria-label="Opción disponible próximamente">
+    <span></span>
+  </button>
+</main>
+
+<div id="overlay" class="overlay">
+  <div class="modal">
+    <div class="modal-image" id="modal-image"></div>
+
+    <div class="modal-content">
+      <h2 id="modal-title"></h2>
+      <p id="modal-description"></p>
+
+      <div class="modal-actions">
+        <button id="modal-go-btn">GO</button>
+        <button onclick="closeModal()">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="bosque.js?v=2"></script>
+</body>
+</html>

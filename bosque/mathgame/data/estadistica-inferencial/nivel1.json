@@ -1,0 +1,57 @@
+[
+  {
+    "nivel": 1,
+    "fondo": "https://picsum.photos/1200/800?random=121",
+    "pasos": [
+      {
+        "pregunta": "¿Qué es una población?",
+        "opciones": [
+          { "texto": "Conjunto total de datos", "correcta": true },
+          { "texto": "Una parte de los datos", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "¿Qué es una muestra?",
+        "opciones": [
+          { "texto": "Subconjunto de la población", "correcta": true },
+          { "texto": "Toda la población", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "Inferir significa:",
+        "opciones": [
+          { "texto": "Sacar conclusiones", "correcta": true },
+          { "texto": "Medir exactamente", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "Se usa una muestra para:",
+        "opciones": [
+          { "texto": "Estimar la población", "correcta": true },
+          { "texto": "Eliminar datos", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "Probabilidad mide:",
+        "opciones": [
+          { "texto": "Posibilidad de un evento", "correcta": true },
+          { "texto": "Valor exacto", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "Si todos los resultados son iguales:",
+        "opciones": [
+          { "texto": "Probabilidad uniforme", "correcta": true },
+          { "texto": "Probabilidad cero", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "Inferencia usa:",
+        "opciones": [
+          { "texto": "Datos de muestra", "correcta": true },
+          { "texto": "Datos inventados", "correcta": false }
+        ]
+      }
+    ]
+  }
+]

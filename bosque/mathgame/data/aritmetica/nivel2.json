@@ -1,0 +1,57 @@
+[
+  {
+    "nivel": 2,
+    "fondo": "https://picsum.photos/1200/800?random=42",
+    "pasos": [
+      {
+        "pregunta": "\\( 2 \\times 5 = ? \\)",
+        "opciones": [
+          { "texto": "\\( 10 \\)", "correcta": true },
+          { "texto": "\\( 7 \\)", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "\\( 12 \\div 3 = ? \\)",
+        "opciones": [
+          { "texto": "\\( 4 \\)", "correcta": true },
+          { "texto": "\\( 9 \\)", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "\\( 3 \\times 4 = ? \\)",
+        "opciones": [
+          { "texto": "\\( 12 \\)", "correcta": true },
+          { "texto": "\\( 7 \\)", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "\\( 20 \\div 5 = ? \\)",
+        "opciones": [
+          { "texto": "\\( 4 \\)", "correcta": true },
+          { "texto": "\\( 25 \\)", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "\\( 6 \\times 3 = ? \\)",
+        "opciones": [
+          { "texto": "\\( 18 \\)", "correcta": true },
+          { "texto": "\\( 9 \\)", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "\\( 18 \\div 6 = ? \\)",
+        "opciones": [
+          { "texto": "\\( 3 \\)", "correcta": true },
+          { "texto": "\\( 12 \\)", "correcta": false }
+        ]
+      },
+      {
+        "pregunta": "\\( 4 \\times 7 = ? \\)",
+        "opciones": [
+          { "texto": "\\( 28 \\)", "correcta": true },
+          { "texto": "\\( 11 \\)", "correcta": false }
+        ]
+      }
+    ]
+  }
+]

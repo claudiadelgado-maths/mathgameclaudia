@@ -1,0 +1,166 @@
+:root {
+  --viewport-width: 100vw;
+  --viewport-height: 100dvh;
+  --stage-size: min(100vw, 100dvh);
+  --outside-x: max(0px, calc((var(--viewport-width) - var(--stage-size)) / 2));
+  --outside-y: max(0px, calc((var(--viewport-height) - var(--stage-size)) / 2));
+  --rail-size: 52px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+body {
+  min-height: 100dvh;
+  background: #070b13;
+  color: #ffffff;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.zone-page {
+  position: fixed;
+  inset: 0;
+  width: var(--viewport-width);
+  height: var(--viewport-height);
+  overflow: hidden;
+  background: #070b13;
+}
+
+.zone-stage {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: var(--stage-size);
+  height: var(--stage-size);
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  background: #111827;
+  box-shadow: 0 0 44px rgba(0, 0, 0, 0.5);
+}
+
+.zone-background {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  user-select: none;
+  pointer-events: none;
+}
+
+.scene-items {
+  position: absolute;
+  inset: 0;
+}
+
+.scene-item {
+  position: absolute;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  transform: translate(-50%, -50%);
+  transform-origin: center;
+  filter: drop-shadow(0 12px 16px rgba(0, 0, 0, 0.28));
+}
+
+.scene-button {
+  cursor: pointer;
+  transition: transform 0.18s ease, filter 0.18s ease;
+}
+
+.scene-button:hover,
+.scene-button:focus-visible {
+  transform: translate(-50%, -50%) scale(1.045);
+  filter: drop-shadow(0 16px 22px rgba(0, 0, 0, 0.35));
+  outline: none;
+}
+
+.scene-button.inactive {
+  cursor: pointer;
+}
+
+.scene-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  user-select: none;
+  pointer-events: none;
+}
+
+.edge-rail {
+  position: fixed;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(4, 9, 16, 0.76);
+  color: #ffffff;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+}
+
+.edge-rail:hover,
+.edge-rail:focus-visible {
+  background: rgba(13, 24, 40, 0.92);
+  outline: none;
+}
+
+.edge-rail span {
+  font-size: 15px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.layout-wide .edge-rail {
+  top: 0;
+  left: 0;
+  width: max(var(--outside-x), var(--rail-size));
+  height: 100%;
+}
+
+.layout-wide .edge-rail span {
+  transform: rotate(-90deg);
+}
+
+.layout-tall .edge-rail {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: max(var(--outside-y), var(--rail-size));
+}
+
+.layout-square .edge-rail {
+  top: 50%;
+  left: 0;
+  width: 46px;
+  height: 132px;
+  border-radius: 0 14px 14px 0;
+  transform: translateY(-50%);
+}
+
+.layout-square .edge-rail span {
+  transform: rotate(-90deg);
+  font-size: 12px;
+}
+
+@media (max-width: 720px) {
+  :root {
+    --rail-size: 42px;
+  }
+
+  .edge-rail span {
+    font-size: 12px;
+  }
+}
